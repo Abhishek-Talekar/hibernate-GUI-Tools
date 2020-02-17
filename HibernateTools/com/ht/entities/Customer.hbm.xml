@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 17, 2020 3:40:51 PM by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.ht.entities.Customer" table="customer" catalog="pepperfry" optimistic-lock="version">
+        <id name="customerNumber" type="string">
+            <column name="customer_number" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="first_name" length="45" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name" length="45" />
+        </property>
+        <property name="mobileNumber" type="string">
+            <column name="mobile_number" length="20" />
+        </property>
+        <property name="emailAddress" type="string">
+            <column name="email_address" length="45" />
+        </property>
+        <property name="addressLine1" type="string">
+            <column name="address_line1" length="45" />
+        </property>
+        <property name="addressLine2" type="string">
+            <column name="address_line2" length="45" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="45" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="45" />
+        </property>
+        <property name="zip" type="java.lang.Integer">
+            <column name="zip" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
